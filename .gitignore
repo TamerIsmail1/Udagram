@@ -1,2 +1,3 @@
 node_modules
 ./udagram/udagram-api/bin/dev.sh
+udagram/udagram-api/bin/dev.sh
