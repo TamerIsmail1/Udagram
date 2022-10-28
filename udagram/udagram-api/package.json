@@ -17,7 +17,7 @@
     "deploy": "npm run build && chmod +x bin/deploy.sh && bash bin/deploy.sh",
     "devdeploy": "npm run build && chmod +x bin/dev.sh && bash bin/dev.sh",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "test": "echo Done Testing"
+    "test": "echo Done API Testing"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
