@@ -78,3 +78,7 @@ jobs:
           command: |
             echo "Deploy Front-End"
             npm run frontend:deploy
+workflows:
+  udagram:
+    jobs:
+      - build-deploy
