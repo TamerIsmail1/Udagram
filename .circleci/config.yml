@@ -65,16 +65,16 @@ jobs:
           command: |
             echo "Test the backend API"
             npm run api:test
-      # Deploy Front-Emd and Backend API
+      # Deploy Front-End and Backend API
       - run:
           name: Deploy API
-          # Install, build, deploy in both apps
+          # deploy API
           command: |
             echo "Deploy API"
             npm run api:deploy
       - run:
           name: Deploy Front-End
-          # Install, build, deploy in both apps
+          # deploy Front-End
           command: |
             echo "Deploy Front-End"
             npm run frontend:deploy
