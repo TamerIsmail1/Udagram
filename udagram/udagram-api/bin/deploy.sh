@@ -1,9 +1,9 @@
 eb init udagram-api --platform node.js --region us-east-1 &&
 eb list &&
 eb use udagram-api-env  &&
-echo $POSTGRES_HOST &&
-echo $POSTGRES_USERNAME &&
-echo $POSTGRES_DB && 
+echo $(POSTGRES_HOST) "POSTGRES_HOST" &&
+echo $(POSTGRES_USERNAME) "POSTGRES_USERNAME" &&
+echo $(POSTGRES_DB) "POSTGRES_DB" && 
 echo $POSTGRES_PASSWORD &&
 echo $PORT &&
 echo $AWS_DEFAULT_REGION &&
