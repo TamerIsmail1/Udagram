@@ -63,7 +63,8 @@ jobs:
   # deploy step will run only after manual approval
   deploy:
     docker:
-      - image: "cimg/base:stable"
+      #- image: "cimg/base:stable"
+      - image: "cimg/node:16.15"
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
