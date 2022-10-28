@@ -15,7 +15,6 @@
     "devprod": "npx tsc && node ./server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && chmod +x bin/deploy.sh && bash bin/deploy.sh",
-    "olddeploy": "npm run build && chmod +x bin/deploy.sh && bash bin/deploy.sh",
     "devdeploy": "npm run build && chmod +x bin/dev.sh && bash bin/dev.sh",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo Done Backend Testing"
